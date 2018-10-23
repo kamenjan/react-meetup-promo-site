@@ -32,7 +32,6 @@ function updateCounter () {
   var diffDays = Math.round(Math.abs((new Date().getTime() - eventDate.getTime())/(oneDay)))
 
   days.innerText = (diffDays < 10? '0' : '') + diffDays + 'd'
-  // days.innerText = diffDays
 }
 
 

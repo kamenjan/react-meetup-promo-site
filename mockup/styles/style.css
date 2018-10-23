@@ -1,24 +1,43 @@
-/*Some global bullshit*/
-
+/* Some globals */
 body {
     margin: 0;
     text-align: center;
-    color: #FFFFFF;
-    background-color: #519DAD;
+    color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+
+    /* Background gradient: */
+    background-image: radial-gradient(circle at top, #0C4642 -50%, #36BFB6 100%);
+    /*background: #00a1af; !* Old browsers *!*/
+    /*background: -moz-linear-gradient(top, #00a1af 0%, #1eb5ab 32%, #3eb2a8 100%); !* FF3.6-15 *!*/
+    /*background: -webkit-linear-gradient(top, #00a1af 0%,#1eb5ab 32%,#3eb2a8 100%); !* Chrome10-25,Safari5.1-6 *!*/
+    /*background: linear-gradient(to bottom, #00a1af 0%,#1eb5ab 32%,#3eb2a8 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a1af', endColorstr='#3eb2a8',GradientType=0 ); !* IE6-9 *!*/
+}
+
+#bg-texture {
+    opacity: 0.3;
+    height: 100vh;
+
+    background: url("../static/sliced_react_logo.png") no-repeat center;
+    background-size: contain;
+
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+
 }
 
 a:link, a:hover, a:active, a:visited {
-    color: #FFFFFF;
+    color: #f2f2f2;
     text-decoration: none;
 }
 
-img {
-    /*-webkit-filter: grayscale(100%) brightness(100%); !* Safari 6.0 - 9.0 *!*/
-    /*filter: grayscale(100%) brightness(100%);*/
-}
 
-
+/* Default style is mobile first */
 /* Header */
 header {
     padding: 8px 8px;
@@ -33,8 +52,11 @@ header img {
 
 /* Title */
 #title {
-    padding: 10px 10px;
-    font-size: 34px;
+    padding: 20px 20px;
+    line-height: 60px;
+    font-size: 45px;
+    font-family: "Helvetica Neue";
+    color: #74ffc2;
     font-weight: bold;
 }
 
@@ -46,36 +68,46 @@ header img {
 
 /*  Description */
 .description {
-    padding: 10px 10px;
-    font-size: 14px;
+    padding: 10px 30px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #ffffdf;
 }
 
 .description p {
-    margin: 0.6em 0.6em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 #description-short {
-    padding: 10px 10px;
-    font-size: 14px;
+    /*padding: 10px 10px;*/
+    /*font-size: 14px;*/
 }
 
 #description-short p {
-    margin: 0.6em 0.6em;
+    /*margin: 0.6em 0.6em;*/
 }
 
 
 /* Countdown */
 #countdown {
     font-size: 36px;
-    font-weight: bold;
-
-    padding: 4px 4px;
+    font-family: Courier;
+    font-weight: normal;
+    color: #ffffdf;
+    border: 3px dashed #ffffdf;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 8px;
 }
 
 
 /* Date/location info */
 #date-location-info {
-    padding: 10px 10px;
+    padding: 20px 10px;
+    font-size: 22px;
+    color: #ffdb80;
+    font-weight: bold;
 }
 
 
@@ -97,16 +129,15 @@ header img {
 
 
 /* 'Tell me more' button */
-#more {
-    padding: 10px 10px;
+#more,
+#back {
+    margin: 20px 20px;
 }
 
-#more a {
-
+#more a,
+#back a {
     border-radius: 3px;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     text-transform: uppercase;
-
     padding: 10px;
-
 }
