@@ -1,0 +1,112 @@
+/*Some global bullshit*/
+
+body {
+    margin: 0;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #519DAD;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link, a:hover, a:active, a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+img {
+    /*-webkit-filter: grayscale(100%) brightness(100%); !* Safari 6.0 - 9.0 *!*/
+    /*filter: grayscale(100%) brightness(100%);*/
+}
+
+
+/* Header */
+header {
+    padding: 8px 8px;
+}
+
+header img {
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Title */
+#title {
+    padding: 10px 10px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+#title-react-logo {
+    width: 50px;
+    vertical-align:middle
+}
+
+
+/*  Description */
+.description {
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.description p {
+    margin: 0.6em 0.6em;
+}
+
+#description-short {
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+#description-short p {
+    margin: 0.6em 0.6em;
+}
+
+
+/* Countdown */
+#countdown {
+    font-size: 36px;
+    font-weight: bold;
+
+    padding: 4px 4px;
+}
+
+
+/* Date/location info */
+#date-location-info {
+    padding: 10px 10px;
+}
+
+
+/* Sponsors */
+#sponsors {
+    padding: 10px 10px;
+}
+
+#sponsors img {
+    height: 24px;
+}
+
+
+/* Time table */
+#time-table ul {
+    display: inline-block;
+    text-align: left;
+}
+
+
+/* 'Tell me more' button */
+#more {
+    padding: 10px 10px;
+}
+
+#more a {
+
+    border-radius: 3px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    text-transform: uppercase;
+
+    padding: 10px;
+
+}
