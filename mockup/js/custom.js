@@ -9,7 +9,8 @@ var hours = document.getElementById('hours')
 var minutes = document.getElementById('minutes')
 var seconds = document.getElementById('seconds')
 
-var eventDate = new Date("Nov 13, 2018 18:00:00")
+// Expressed in GMT, 18:00:00 CEST
+var eventDate = new Date("Nov 13, 2018 16:00:00")
 
 // EVENT LISTENERS
 // toggleButton.addEventListener('click', function(){
@@ -22,7 +23,10 @@ window.setInterval(updateCounter, 1000);
 // FUNCTIONS
 function updateCounter () {
 
-  var delta = new Date(Date.now() - eventDate)
+  console.log(eventDate);
+  console.log(eventDate.getTimezoneOffset());
+
+  var delta = new Date(eventDate - Date.now())
 
   hours.innerText = (delta.getHours() < 10? '0' : '') + delta.getHours() + 'h'
   minutes.innerText = (delta.getMinutes() < 10? '0' : '') + delta.getMinutes() + 'm'

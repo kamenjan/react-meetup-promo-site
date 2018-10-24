@@ -2,38 +2,31 @@
 body {
     margin: 0;
     text-align: center;
-    color: #f2f2f2;
+    color: #ffffdf;
+    /*color: #74ffc2;*/
+    /*color: #ffdb80;*/
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
 
     /* Background gradient: */
     background-image: radial-gradient(circle at top, #0C4642 -50%, #36BFB6 100%);
-    /*background: #00a1af; !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top, #00a1af 0%, #1eb5ab 32%, #3eb2a8 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top, #00a1af 0%,#1eb5ab 32%,#3eb2a8 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom, #00a1af 0%,#1eb5ab 32%,#3eb2a8 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a1af', endColorstr='#3eb2a8',GradientType=0 ); !* IE6-9 *!*/
 }
 
-#bg-texture {
-    opacity: 0.3;
-    height: 100vh;
+#main-container {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    background: url("../static/sliced_react_logo.png") no-repeat center;
+#main-section {
+    background: url("../static/sliced_react_logo_opacity.png") no-repeat center;
     background-size: contain;
-
-    position: absolute;
-    z-index: -10;
-    left: 0;
-    right: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-
 }
+
 
 a:link, a:hover, a:active, a:visited {
-    color: #f2f2f2;
-    text-decoration: none;
+    /*color: #ffffdf;*/
+    /*text-decoration: none;*/
 }
 
 
@@ -51,51 +44,26 @@ header img {
 
 
 /* Title */
-#title {
+#title-container {
     padding: 20px 20px;
     line-height: 60px;
     font-size: 45px;
     font-family: "Helvetica Neue";
-    color: #74ffc2;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
-#title-react-logo {
-    width: 50px;
-    vertical-align:middle
-}
-
-
-/*  Description */
-.description {
-    padding: 10px 30px;
-    font-family: Helvetica;
-    font-size: 20px;
-    color: #ffffdf;
-}
-
-.description p {
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-}
-
-#description-short {
-    /*padding: 10px 10px;*/
-    /*font-size: 14px;*/
-}
-
-#description-short p {
-    /*margin: 0.6em 0.6em;*/
-}
+/*#title-react-logo {*/
+    /*width: 50px;*/
+    /*vertical-align:middle*/
+/*}*/
 
 
 /* Countdown */
-#countdown {
+#countdown-container {
     font-size: 36px;
     font-family: Courier;
     font-weight: normal;
-    color: #ffffdf;
-    border: 3px dashed #ffffdf;
+    border: 2px dashed #ffffdf;
     border-radius: 10px;
     display: inline-block;
     padding: 5px 8px;
@@ -103,21 +71,42 @@ header img {
 
 
 /* Date/location info */
-#date-location-info {
+#date-location-info-container {
     padding: 20px 10px;
     font-size: 22px;
-    color: #ffdb80;
     font-weight: bold;
 }
 
 
-/* Sponsors */
-#sponsors {
-    padding: 10px 10px;
+/*  Description */
+.description {
+    padding: 10px 30px;
+    font-family: Helvetica;
+    /*font-size: 20px;*/
 }
 
-#sponsors img {
-    height: 24px;
+.description p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#description-short-container {
+    /*padding: 10px 10px;*/
+    font-size: 20px;
+}
+
+#description-short-container p {
+    /*margin: 0.6em 0.6em;*/
+}
+
+#description-long-container {
+    font-size: 16px;
+    /*padding: 10px 10px;*/
+    /*font-size: 14px;*/
+}
+
+#description-long-container p {
+    margin: 0.6em 0.6em;
 }
 
 
@@ -129,15 +118,36 @@ header img {
 
 
 /* 'Tell me more' button */
-#more,
+#call-to-action-container,
 #back {
     margin: 20px 20px;
+    /*font-weight: bold;*/
 }
 
-#more a,
+#call-to-action-container a,
 #back a {
+    padding: 10px;
+    background-color: #36BFB6;
     border-radius: 3px;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     text-transform: uppercase;
+}
+
+a:link, a:hover, a:active, a:visited {
+    /*color: #ffffdf;*/
+    text-decoration: none;
+    /*color: #74ffc2;*/
+    color: #ffdb80;
+}
+
+
+/* Sponsors */
+#sponsors-container {
+    padding: 10px 10px;
+}
+
+#sponsors-container img {
     padding: 10px;
+    /*padding-right: 8px;*/
+    height: 24px;
 }

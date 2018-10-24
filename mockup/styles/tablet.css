@@ -1,3 +1,37 @@
 @media screen and (min-width: 479px) {
 
+    #title-container {
+        padding: 20px 20px;
+        line-height: initial;
+        font-size: 45px;
+    }
+
+    /*  Description */
+    .description {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    .description p {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+    }
+
+    #description-short-container {
+        /*padding: 10px 10px;*/
+        font-size: 28px;
+    }
+
+    #description-short-container p {
+        /*margin: 0.6em 0.6em;*/
+    }
+
+    #description-long-container {
+        font-size: 22px;
+    }
+
+    #description-long-container p {
+        margin: 0.6em 0.6em;
+    }
+
 }
