@@ -1,9 +1,13 @@
 import React from 'react'
 
-const CallToActionButton = () => {
+import { Link } from 'react-router-dom'
+
+const CallToActionButton = ({callToActionLabel, routeTo}) => {
 
   return(
-    <button type="button">TELL ME MORE</button>
+    <div type="button">
+      <Link to={routeTo}>{callToActionLabel}</Link>
+    </div>
   )
 }
 

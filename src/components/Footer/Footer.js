@@ -2,12 +2,12 @@ import React from 'react'
 
 import CallToActionButton from './../CallToActionButton/CallToActionButton'
 
-const Footer = () => {
+const Footer = ( props ) => {
 
   return(
     <div id={'footer'}>
 
-      <CallToActionButton/>
+      <CallToActionButton { ... props }/>
 
       <div id={"sponsors-container"}>
         <span>
