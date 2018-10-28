@@ -1,0 +1,4 @@
+#body {
+    background: url("../../static/images/bg_react_logo.png") no-repeat center;
+    background-size: contain;
+}

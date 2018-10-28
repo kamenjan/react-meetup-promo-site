@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './countdownCounter.css'
+
 export default class CountdownCounter extends Component {
 
   constructor(props) {
@@ -39,10 +41,10 @@ export default class CountdownCounter extends Component {
 
     this.setState( () => (
       {
-        days: (diffDays < 10? '0' : '') + diffDays + 'd',
-        hours: (delta.getHours() < 10? '0' : '') + delta.getHours() + 'h',
-        minutes: (delta.getMinutes() < 10? '0' : '') + delta.getMinutes() + 'm',
-        seconds: (delta.getSeconds() < 10? '0' : '') + delta.getSeconds() + 's'
+        days: (diffDays < 10? '0' : '') + diffDays + 'd ',
+        hours: (delta.getHours() < 10? '0' : '') + delta.getHours() + 'h ',
+        minutes: (delta.getMinutes() < 10? '0' : '') + delta.getMinutes() + 'm ',
+        seconds: (delta.getSeconds() < 10? '0' : '') + delta.getSeconds() + 's '
       }
     ))
 

@@ -1,17 +1,19 @@
 import React from 'react'
 
+import fbLogoImage from '../../static/images/facebook.png'
+import meetupLogoImage from '../../static/images/meetup.png'
+
+import './header.css'
+
 const Header = () => {
 
   return(
     <div id={'header'}>
-        <span id="link-fb" className="link">
-            FB{/*<img src="static/facebook.png" alt="">*/}
+        <span id={"link-fb"} className={"header-link"}>
+            <img src={fbLogoImage} alt={""}/>
         </span>
-      <span id="link-meetup" className="link">
-            MEETUP{/*<img src="static/meetup.png" alt="">*/}
-        </span>
-      <span id="link-calendar" className="link">
-            CALENDAR{/*<img src="static/calendar.png" alt="">*/}
+      <span id={"link-meetup"} className={"header-link"}>
+            <img src={meetupLogoImage} alt={""}/>
         </span>
     </div>
   )

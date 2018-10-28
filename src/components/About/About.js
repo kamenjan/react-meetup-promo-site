@@ -2,6 +2,8 @@ import React from 'react'
 
 import TimeTable from './../TimeTable/TimeTable'
 
+import './about.css'
+
 const About = () => {
 
   return(
@@ -9,10 +11,11 @@ const About = () => {
 
       <div id={"description-container"}>
         <p>Just curious what the fuss is all about? No problem. This event is
-          welcoming to all skill levels. It will be a great opportunity to see
+          welcoming to all skill levels.</p>
+        <p>It will be a great opportunity to see
           what other React developers are busy with, compare tool belts and
           maybe even add some new tools to it.</p>
-        <p>Are you available for work? I'm sure somebody will gladly have a word
+        <p>Available for work? I'm sure somebody will gladly have a word
           with you.</p>
         <p>Poligon was really friendly and on board with the idea so they have
           set us up with an ideal location and environment at their Creative
@@ -23,7 +26,7 @@ const About = () => {
         <p>Come join us.</p>
       </div>
 
-      <TimeTable/>
+      {/*<TimeTable/>*/}
 
     </div>
   )

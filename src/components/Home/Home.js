@@ -2,13 +2,16 @@ import React from 'react'
 
 import CountdownCounter from '../CountdownCounter/CountdownCounter'
 
+import './home.css'
+
 const Home = () => {
 
   return(
     <div id={'home'}>
 
       <div id={"title-container"}>
-        <span>Ljubljana React Meetup</span>
+        <h1>Ljubljana</h1>
+        <h1>React Meetup</h1>
       </div>
 
       <CountdownCounter/>

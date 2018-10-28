@@ -1,0 +1,33 @@
+#sponsors-container {
+    padding: 10px 10px;
+}
+
+#sponsors-container img {
+    padding: 10px;
+    height: 24px;
+}
+
+/* Tablet query */
+@media screen and (min-width: 479px) {
+    #sponsors-container {
+        padding: 10px 10px;
+    }
+
+    #sponsors-container img {
+        padding: 14px;
+        height: 32px;
+    }
+}
+
+
+/* Desktop query */
+@media screen and (min-width: 767px) {
+    #sponsors-container {
+        padding: 10px 10px;
+    }
+
+    #sponsors-container img {
+        padding: 18px;
+        height: 40px;
+    }
+}

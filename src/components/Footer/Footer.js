@@ -2,6 +2,11 @@ import React from 'react'
 
 import CallToActionButton from './../CallToActionButton/CallToActionButton'
 
+import poligonLogoImage from '../../static/images/poligon.png'
+import povioLogoImage from '../../static/images/povio.png'
+
+import './footer.css'
+
 const Footer = ( props ) => {
 
   return(
@@ -11,16 +16,10 @@ const Footer = ( props ) => {
 
       <div id={"sponsors-container"}>
         <span>
-          poligon
-          {/*<img src="static/poligon.png" alt="">*/}
+          <img src={poligonLogoImage} alt=""/>
         </span>
         <span>
-          povio
-          {/*<img src="static/povio.png" alt="">*/}
-        </span>
-        <span>
-          toshl
-          {/*<img src="static/toshl.png" alt="">*/}
+          <img src={povioLogoImage} alt=""/>
         </span>
       </div>
 
