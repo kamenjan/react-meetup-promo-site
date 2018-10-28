@@ -1,6 +1,6 @@
 #header {
-    margin-top: 10px;
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .header-link img {
@@ -12,7 +12,7 @@
 /* Tablet query */
 @media screen and (min-width: 479px) {
     #header {
-        margin-top: 16px;
+        padding-top: 16px;
         margin-bottom: 10px;
     }
 
@@ -27,7 +27,7 @@
 /* Desktop query */
 @media screen and (min-width: 767px) {
     #header {
-        margin-top: 22px;
+        padding-top: 22px;
         margin-bottom: 10px;
     }
 

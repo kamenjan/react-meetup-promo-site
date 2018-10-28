@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TimeTable from './../TimeTable/TimeTable'
+// import TimeTable from './../TimeTable/TimeTable'
 
 import './about.css'
 
