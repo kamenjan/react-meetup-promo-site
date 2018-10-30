@@ -14,8 +14,8 @@ export default class CountdownCounter extends Component {
       seconds: 0
     }
 
-    /* Expressed in GMT. Equals 18:00:00 CEST */
-    this.eventDate = new Date("Nov 13, 2018 16:00:00")
+    /* Expressed in GMT. Equals 19:00:00 CEST / Equals 18:00:00 CET */
+    this.eventDate = new Date("Nov 13, 2018 17:00:00")
 
     /* Set 1 second interval for the counter */
     this.interval = setInterval(this.updateCounter, 1000)
