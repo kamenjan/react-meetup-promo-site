@@ -16,10 +16,14 @@ const Footer = ( props ) => {
 
       <div id={"sponsors-container"}>
         <span>
-          <img src={poligonLogoImage} alt=""/>
+          <a href={"https://www.poligon.si/"} target={"_blank"}>
+            <img src={poligonLogoImage} alt={"Poligon Logo"}/>
+          </a>
         </span>
         <span>
-          <img src={povioLogoImage} alt=""/>
+          <a href={"https://www.poviolabs.com/"} target={"_blank"}>
+            <img src={povioLogoImage} alt={"PovioLabs Logo"}/>
+          </a>
         </span>
       </div>
 
