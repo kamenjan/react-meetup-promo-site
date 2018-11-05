@@ -23,9 +23,6 @@ window.setInterval(updateCounter, 1000);
 // FUNCTIONS
 function updateCounter () {
 
-  console.log(eventDate);
-  console.log(eventDate.getTimezoneOffset());
-
   var delta = new Date(eventDate - Date.now())
 
   hours.innerText = (delta.getHours() < 10? '0' : '') + delta.getHours() + 'h'
