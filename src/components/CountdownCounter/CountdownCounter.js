@@ -8,14 +8,14 @@ export default class CountdownCounter extends Component {
     super(props)
 
     this.state = {
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0
+      days: '00',
+      hours: '00',
+      minutes: '00',
+      seconds: '00'
     }
 
     /* Expressed in GMT. Equals 19:00:00 CEST / Equals 18:00:00 CET */
-    this.eventDate = new Date("Nov 13, 2018 17:00:00")
+    this.eventDate = new Date("Nov 13, 2018 18:00:00")
 
     /* Set 1 second interval for the counter */
     this.interval = setInterval(this.updateCounter, 1000)
@@ -34,7 +34,10 @@ export default class CountdownCounter extends Component {
     const timeNow = new Date().getTime()
     const timeEvent = this.eventDate.getTime()
 
-    const delta = new Date(this.eventDate - Date.now())
+    /* Calculate delta and apply CET timezone */
+    const delta = new Date(timeEvent - (timeNow + 3600*1000))
+
+    timeNow + 1000 > timeEvent && clearInterval(this.interval)
 
     const oneDay = 24*60*60*1000
     const diffDays = Math.round(Math.abs( (timeNow - timeEvent) / (oneDay) ))
