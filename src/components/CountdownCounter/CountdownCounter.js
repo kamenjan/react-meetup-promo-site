@@ -44,7 +44,7 @@ export default class CountdownCounter extends Component {
 
     this.setState( () => (
       {
-        days: (diffDays < 10? '0' : '') + diffDays + 'd ',
+        days: '00d ',
         hours: (delta.getHours() < 10? '0' : '') + delta.getHours() + 'h ',
         minutes: (delta.getMinutes() < 10? '0' : '') + delta.getMinutes() + 'm ',
         seconds: (delta.getSeconds() < 10? '0' : '') + delta.getSeconds() + 's '
